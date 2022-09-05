@@ -44,9 +44,4 @@ public class MovieService {
         return movieRepository.save(mv);
     }
 
-    public String delete(MovieDTO movieDTO) throws Exception{
-        movieRepository.deleteMovieByName(movieDTO.name);
-            return "Movie deleted successfully!";
-        }
-
 }

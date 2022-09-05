@@ -37,11 +37,5 @@ public class MovieController {
         return ResponseEntity.ok(movieService.updateMovieStatus(id, watched, dateWatched));
     }
 
-    @DeleteMapping
-    @Transactional
-    public ResponseEntity<String> deleteMovie(@RequestBody MovieDTO movieDTO) throws Exception {
-        return ResponseEntity.ok(movieService.delete(movieDTO));
-    }
-
 
 }

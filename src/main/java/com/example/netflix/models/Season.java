@@ -12,10 +12,8 @@ public class Season {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     @Column
     private Integer seasonNumber;
-
     @OneToMany(cascade=CascadeType.REMOVE)
     private List<Episode> episodes;
 
